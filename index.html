@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Empathy Line</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌿 The Empathy Line</h1>
+    <p class="tagline">Your pain deserves a witness. ₹799/hour | ₹199 Soul Mirror add-on</p>
+
+    <div class="disclaimer">
+      <h2>⚠️ Disclaimer</h2>
+      <p>
+        This is a listening sanctuary—not therapy, diagnosis, or crisis intervention.<br><br>
+        আমরা চিকিৎসা, আইনি বা মনোবিদ্যাগত পরামর্শ দিই না। যদি আপনি বিপদের মধ্যে থাকেন, অনুগ্রহ করে জরুরি পরিষেবা বা প্রশিক্ষিত পেশাদারের সাহায্য নিন।<br><br>
+        Everything you share is held in confidence, but this is not a HIPAA-regulated space.<br><br>
+        By booking, you acknowledge this is a space for emotional presence—not professional treatment.
+      </p>
+    </div>
+
+    <div class="terms">
+      <input type="checkbox" id="acceptTerms" />
+      <label for="acceptTerms">
+        I accept the <strong>Terms & Conditions</strong>:<br>
+        No refunds after booking. Payment confirms emotional readiness.<br>
+        Sessions are sacred, not transactional. Your story deserves reverence.
+      </label>
+    </div>
+
+    <form id="bookingForm" class="hidden" enctype="multipart/form-data">
+      <label>Name</label>
+      <input type="text" name="name" required />
+
+      <label>Preferred Date</label>
+      <input type="date" name="date" required />
+
+      <label>Time Slot</label>
+      <select name="time">
+        <option>Morning (9–11 AM)</option>
+        <option>Afternoon (1–3 PM)</option>
+        <option>Evening (6–8 PM)</option>
+      </select>
+
+      <label>Session Type</label>
+      <select name="type">
+        <option>Audio</option>
+        <option>Silent Session</option>
+      </select>
+
+      <label>Would you like a Soul Mirror? (+₹199)</label>
+      <select name="mirror">
+        <option>No</option>
+        <option>Yes</option>
+      </select>
+
+     <!-- ... previous fields ... -->
+
+<label>Anything you'd like us to know?</label>
+<textarea name="notes" rows="3"></textarea>
+
+<!-- Small disclaimer near Pay Now -->
+<div class="mini-disclaimer">
+  ⚠️ This is a listening space—not therapy or crisis care. By paying, you acknowledge emotional presence, not professional treatment.
+</div>
+
+<a href="https://razorpay.me/@tel" target="_blank">
+  <button type="button" class="pay">Pay Now</button>
+</a>
+
+<button type="submit">Submit Booking</button>
+
+<div class="screenshot-section">
+  <label>Upload Razorpay Payment Screenshot <span style="color:red">*</span></label>
+  <input type="file" name="paymentScreenshot" accept="image/*" required />
+  <p class="screenshot-note">A glimpse of your offering, held with care.</p>
+</div>
+    </form>
+
+    <div id="confirmation" class="hidden">
+      <h2>✅ You're booked!</h2>
+      <p>We’ll hold space for you at your chosen time. Until then, breathe easy—you’re not alone.</p>
+    </div>
+  </div>
+
+  Designed with soul by DD The Empathy Line © 2025
+
+  <script src="script.js"></script>
+</body>
+</html>
